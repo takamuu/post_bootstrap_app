@@ -1,0 +1,9 @@
+<% if @post.errors.any? %>
+  <div>
+    <url>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><span style="color: red;"><%= msg %></span></li>
+      <% end %>
+    </url>
+  </div>
+<% end %>
