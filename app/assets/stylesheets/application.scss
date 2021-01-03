@@ -28,6 +28,7 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
   }
 }
 
+// 共通
 .base-container {
   @extend .container-fluid;
   max-width: var(--breakpoint-lg);
@@ -36,4 +37,14 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts";
 
 body {
   padding-top: 56px;
+}
+
+// テーブル
+th,
+td {
+  vertical-align: middle !important;
+}
+
+.break-word {
+  word-break: break-word;
 }
